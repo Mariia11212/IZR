@@ -175,7 +175,7 @@ namespace lr1.Tests
                 CollectionAssert.AreEqual(new[] { 10, 20, 30 }, iteratedItems);
             }
         }
-    } 
+    }
     // МОДУЛЬ: Vector
 
     [TestFixture]
@@ -351,6 +351,59 @@ namespace lr1.Tests
                 var bottomRightVertex = rect.Vertices.GetAt(2);
                 Assert.That(bottomRightVertex.X, Is.EqualTo(15 + 4)); // 10 + 4 + 5
                 Assert.That(bottomRightVertex.Y, Is.EqualTo(10 + 2)); // 20 + 2 - 10
+            }
+        }
+        // МОДУЛЬ: Circle
+        [TestFixture]
+        public class CircleTests
+        {
+            // Тест #1: Перевіряємо, що конструктор з валідними даними правильно ініціалізує властивості.
+            [Test]
+            public void Constructor_WithValidArguments_ShouldInitializeProperties()
+            {
+                var center = new Point(5, 5);
+                var circle = new Circle(center, 10);
+
+                Assert.That(circle.Center, Is.EqualTo(center));
+                Assert.That(circle.Radius, Is.EqualTo(10));
+            }
+
+            // Тест #2: Перевіряємо, що конструктор кидає виняток при нульовому радіусі.
+            [Test]
+            public void Constructor_WithZeroRadius_ShouldThrowArgumentException()
+            {
+                Assert.Throws<ArgumentException>(() => new Circle(new Point(0, 0), 0));
+            }
+
+            // Тест #3: Перевіряємо коректність обчислення площі.
+            [Test]
+            public void GetArea_ShouldReturnCorrectArea()
+            {
+                var circle = new Circle(new Point(0, 0), 10);
+                double expectedArea = Math.PI * 100;
+                Assert.That(circle.GetArea(), Is.EqualTo(expectedArea).Within(0.001));
+            }
+
+            // Тест #4: Перевіряємо коректність обчислення довжини кола (периметра).
+            [Test]
+            public void GetPerimeter_ShouldReturnCorrectPerimeter()
+            {
+                var circle = new Circle(new Point(0, 0), 10);
+                double expectedPerimeter = 2 * Math.PI * 10;
+                Assert.That(circle.GetPerimeter(), Is.EqualTo(expectedPerimeter).Within(0.001));
+            }
+            // Тест #5: Перевіряємо, що Translation змінює центр, але не радіус.
+            [Test]
+            public void ApplyTransformation_WithTranslation_ShouldMoveCenterButNotChangeRadius()
+            {
+                var circle = new Circle(new Point(10, 10), 5);
+                var translation = new Translation(new Vector(5, -5));
+
+                circle.ApplyTransformation(translation);
+
+                Assert.That(circle.Center.X, Is.EqualTo(15));
+                Assert.That(circle.Center.Y, Is.EqualTo(5));
+                Assert.That(circle.Radius, Is.EqualTo(5)); // Радіус не змінився
             }
         }
     }
