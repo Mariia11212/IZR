@@ -286,5 +286,72 @@ namespace lr1.Tests
                 Assert.That(originalPoint.Y, Is.EqualTo(20));
             }
         }
+        // МОДУЛЬ: Rectangle
+        [TestFixture]
+        public class RectangleTests
+        {
+            // Тест #1: Перевіряємо, що конструктор з валідними даними правильно ініціалізує властивості.
+            [Test]
+            public void Constructor_WithValidArguments_ShouldInitializePropertiesCorrectly()
+            {
+                var topLeft = new Point(10, 20);
+                var rect = new Rectangle(topLeft, 100, 50);
+
+                Assert.That(rect.TopLeft, Is.EqualTo(topLeft));
+                Assert.That(rect.Width, Is.EqualTo(100));
+                Assert.That(rect.Height, Is.EqualTo(50));
+                // Перевіряємо, що базовий клас Polygon отримав 4 вершини
+                Assert.That(rect.Vertices.Count, Is.EqualTo(4));
+            }
+
+            // Тест #2: Перевіряємо, що конструктор кидає виняток при нульовій ширині.
+            [Test]
+            public void Constructor_WithZeroWidth_ShouldThrowArgumentException()
+            {
+                Assert.Throws<ArgumentException>(() => new Rectangle(new Point(0, 0), 0, 50));
+            }
+
+            // Тест #3: Перевіряємо, що конструктор кидає виняток при від'ємній висоті.
+            [Test]
+            public void Constructor_WithNegativeHeight_ShouldThrowArgumentException()
+            {
+                Assert.Throws<ArgumentException>(() => new Rectangle(new Point(0, 0), 100, -50));
+            }
+
+            // Тест #4: Перевіряємо правильність обчислення площі.
+            [Test]
+            public void GetArea_ShouldReturnCorrectArea()
+            {
+                var rect = new Rectangle(new Point(0, 0), 10, 5);
+                Assert.That(rect.GetArea(), Is.EqualTo(50));
+            }
+
+            // Тест #5: Перевіряємо правильність обчислення периметра.
+            [Test]
+            public void GetPerimeter_ShouldReturnCorrectPerimeter()
+            {
+                var rect = new Rectangle(new Point(0, 0), 10, 5);
+                Assert.That(rect.GetPerimeter(), Is.EqualTo(30));
+            }
+
+            // Тест #6: Перевіряємо, що трансформація переміщення (Translation) коректно зміщує всі вершини.
+            [Test]
+            public void ApplyTransformation_WithTranslation_ShouldMoveAllVertices()
+            {
+                var rect = new Rectangle(new Point(10, 20), 4, 2);
+                var translation = new Translation(new Vector(5, -10));
+
+                rect.ApplyTransformation(translation);
+
+                // Перевіряємо нову позицію опорної точки
+                Assert.That(rect.TopLeft.X, Is.EqualTo(15));
+                Assert.That(rect.TopLeft.Y, Is.EqualTo(10));
+
+                // Перевіряємо, що інші вершини також змістились (наприклад, права нижня)
+                var bottomRightVertex = rect.Vertices.GetAt(2);
+                Assert.That(bottomRightVertex.X, Is.EqualTo(15 + 4)); // 10 + 4 + 5
+                Assert.That(bottomRightVertex.Y, Is.EqualTo(10 + 2)); // 20 + 2 - 10
+            }
+        }
     }
 }
