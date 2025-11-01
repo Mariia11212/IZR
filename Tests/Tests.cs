@@ -231,5 +231,60 @@ namespace lr1.Tests
             Assert.That(originalVector.Dx, Is.EqualTo(5));
             Assert.That(originalVector.Dy, Is.EqualTo(10));
         }
+        // МОДУЛЬ: Point
+        [TestFixture]
+        public class PointTests
+        {
+            // Тест #1: Перевіряємо, що конструктор Point правильно ініціалізує властивості X та Y.
+            [Test]
+            public void Constructor_ShouldSetXAndYProperties()
+            {
+                var p = new Point(10.5, -20.5);
+                Assert.That(p.X, Is.EqualTo(10.5));
+                Assert.That(p.Y, Is.EqualTo(-20.5));
+            }
+
+            // Тест #2: Перевіряємо, що відстань від точки до самої себе дорівнює 0.
+            [Test]
+            public void GetDistanceTo_Self_ShouldReturnZero()
+            {
+                var p = new Point(12, 34);
+                Assert.That(p.GetDistanceTo(p), Is.EqualTo(0));
+            }
+
+            // Тест #3: Перевіряємо коректність обчислення відстані до іншої точки.
+            [Test]
+            public void GetDistanceTo_AnotherPoint_ShouldCalculateCorrectDistance()
+            {
+                var p1 = new Point(1, 2);
+                var p2 = new Point(4, 6); // Відстань = sqrt((4-1)^2 + (6-2)^2) = sqrt(3^2 + 4^2) = sqrt(9+16) = sqrt(25) = 5
+                Assert.That(p1.GetDistanceTo(p2), Is.EqualTo(5).Within(0.001));
+            }
+
+            // Тест #4: Перевіряємо, що метод Translate повертає нову точку з правильними координатами.
+            [Test]
+            public void Translate_ShouldReturnNewMovedPoint()
+            {
+                var p = new Point(10, 20);
+                var v = new Vector(3, -5);
+                var translatedPoint = p.Translate(v);
+
+                Assert.That(translatedPoint.X, Is.EqualTo(13));
+                Assert.That(translatedPoint.Y, Is.EqualTo(15));
+            }
+
+            // Тест #5: Перевіряємо, що метод Translate не змінює оригінальну точку.
+            [Test]
+            public void Translate_ShouldNotModifyOriginalPoint()
+            {
+                var originalPoint = new Point(10, 20);
+                var v = new Vector(1, 1);
+                originalPoint.Translate(v); // Викликаємо метод, але не зберігаємо результат
+
+                // Переконуємось, що оригінальна точка залишилася незмінною
+                Assert.That(originalPoint.X, Is.EqualTo(10));
+                Assert.That(originalPoint.Y, Is.EqualTo(20));
+            }
+        }
     }
 }
