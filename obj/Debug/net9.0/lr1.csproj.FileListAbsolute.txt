@@ -1,0 +1,15 @@
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\bin\Debug\net9.0\lr1.exe
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\bin\Debug\net9.0\lr1.deps.json
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\bin\Debug\net9.0\lr1.runtimeconfig.json
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\bin\Debug\net9.0\lr1.dll
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\bin\Debug\net9.0\lr1.pdb
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.AssemblyInfoInputs.cache
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.AssemblyInfo.cs
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.csproj.CoreCompileInputs.cache
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.dll
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\refint\lr1.dll
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.pdb
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.genruntimeconfig.cache
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\ref\lr1.dll
+C:\Users\Maria\OneDrive\Desktop\навчання\ФКНК2\OOP_Sem3\OOP-3sem\lr1\obj\Debug\net9.0\lr1.sourcelink.json
