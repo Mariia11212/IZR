@@ -1,8 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "tMiAngh4Lxw=",
+  "dgSpecHash": "6jysGK+CK7k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maria\\OneDrive\\Desktop\\навчання\\ФКНК2\\OOP_Sem3\\OOP-3sem\\lr1\\lr1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Maria\\OneDrive\\Desktop\\навчання\\IZR1\\IZR\\lr1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.applicationinsights\\2.23.0\\microsoft.applicationinsights.2.23.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.codecoverage\\18.0.0\\microsoft.codecoverage.18.0.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.net.test.sdk\\18.0.0\\microsoft.net.test.sdk.18.0.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testing.extensions.telemetry\\1.9.0\\microsoft.testing.extensions.telemetry.1.9.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testing.extensions.trxreport.abstractions\\1.9.0\\microsoft.testing.extensions.trxreport.abstractions.1.9.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testing.extensions.vstestbridge\\1.9.0\\microsoft.testing.extensions.vstestbridge.1.9.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testing.platform\\1.9.0\\microsoft.testing.platform.1.9.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testing.platform.msbuild\\1.9.0\\microsoft.testing.platform.msbuild.1.9.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testplatform.adapterutilities\\17.13.0\\microsoft.testplatform.adapterutilities.17.13.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testplatform.objectmodel\\18.0.0\\microsoft.testplatform.objectmodel.18.0.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\microsoft.testplatform.testhost\\18.0.0\\microsoft.testplatform.testhost.18.0.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\nunit\\4.4.0\\nunit.4.4.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\nunit3testadapter\\5.2.0\\nunit3testadapter.5.2.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\system.collections.immutable\\8.0.0\\system.collections.immutable.8.0.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "C:\\Users\\Maria\\.nuget\\packages\\system.reflection.metadata\\8.0.0\\system.reflection.metadata.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
