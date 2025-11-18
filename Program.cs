@@ -5,8 +5,17 @@ using lr1.DataStructures;
 
 namespace lr1
 {
+    /// <summary>
+    /// Головний клас програми.
+    /// Демонструє роботу геометричних примітивів та власних структур даних.
+    /// </summary>
     class Program
     {
+        /// <summary>
+        /// Точка входу в програму.
+        /// Виконує демонстраційні сценарії для розділів "Геометрія" та "Структури даних".
+        /// </summary>
+        /// <param name="args">Аргументи командного рядка.</param>
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -125,9 +134,8 @@ namespace lr1
             Console.WriteLine($"Чи містить 10? {linkedList.Contains(10)}");
             Console.WriteLine($"Чи містить 100? {linkedList.Contains(100)}");
 
-            // Виправлення для int? FindFirst
             int? firstEvenNullable = linkedList.FindFirst(x => x % 2 == 0);
-            int firstEven = firstEvenNullable ?? 0; // Якщо не знайдено, припускаємо 0 (або інше default значення)
+            int firstEven = firstEvenNullable ?? 0;
             Console.WriteLine($"Перше парне число: {(firstEvenNullable.HasValue ? firstEven.ToString() : "Не знайдено")}");
 
             linkedList.RemoveAt(0);
