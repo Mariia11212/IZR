@@ -5,12 +5,17 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace lr1.DataStructures
 {
+    /// <summary>Кільцевий зв'язний список.</summary>
+    /// <typeparam name="T">Тип елементів.</typeparam>
     public class MyCircularList<T> : IDataList<T>
     {
         private Node<T>? _head;
         private Node<T>? _tail;
+
+        /// <summary>Кількість елементів.</summary>
         public int Count { get; private set; }
 
+        /// <summary>Ініціалізує порожній список.</summary>
         public MyCircularList()
         {
             _head = null;
@@ -18,6 +23,8 @@ namespace lr1.DataStructures
             Count = 0;
         }
 
+        /// <summary>Додає елемент у кінець.</summary>
+        /// <param name="item">Елемент.</param>
         public void Add(T item)
         {
             Node<T> newNode = new Node<T>(item);
@@ -30,12 +37,16 @@ namespace lr1.DataStructures
             else
             {
                 newNode.Next = _head;
-                _tail!.Next = newNode; // _tail не може бути null, якщо _head не null
+                _tail!.Next = newNode;
                 _tail = newNode;
             }
             Count++;
         }
 
+        /// <summary>Вставляє елемент за індексом.</summary>
+        /// <param name="item">Елемент.</param>
+        /// <param name="index">Індекс вставки.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Індекс поза межами.</exception>
         public void InsertAt(T item, int index)
         {
             if (index < 0 || index > Count)
@@ -65,7 +76,7 @@ namespace lr1.DataStructures
             }
             else
             {
-                Node<T> current = _head!; // _head не може бути null, якщо Count > 0
+                Node<T> current = _head!;
                 for (int i = 0; i < index - 1; i++)
                 {
                     current = current.Next!;
@@ -76,12 +87,14 @@ namespace lr1.DataStructures
             Count++;
         }
 
-
+        /// <summary>Видаляє елемент за індексом.</summary>
+        /// <param name="index">Індекс видалення.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Індекс поза межами.</exception>
         public void RemoveAt(int index)
         {
             if (index < 0 || index >= Count)
                 throw new ArgumentOutOfRangeException(nameof(index), "Index is out of bounds.");
-            if (_head == null) return; // Список пустий
+            if (_head == null) return;
 
             if (Count == 1)
             {
@@ -91,16 +104,16 @@ namespace lr1.DataStructures
             else if (index == 0)
             {
                 _head = _head.Next;
-                _tail!.Next = _head; // _tail не може бути null, якщо Count > 1
+                _tail!.Next = _head;
             }
             else
             {
                 Node<T> current = _head;
                 for (int i = 0; i < index - 1; i++)
                 {
-                    current = current!.Next; // current не може бути null
+                    current = current!.Next;
                 }
-                current!.Next = current.Next!.Next; // current і current.Next не можуть бути null
+                current!.Next = current.Next!.Next;
                 if (index == Count - 1)
                 {
                     _tail = current;
@@ -109,7 +122,11 @@ namespace lr1.DataStructures
             Count--;
         }
 
-
+        /// <summary>Отримує елемент за індексом.</summary>
+        /// <param name="index">Індекс елемента.</param>
+        /// <returns>Елемент списку.</returns>
+        /// <exception cref="ArgumentOutOfRangeException">Індекс поза межами.</exception>
+        /// <exception cref="InvalidOperationException">Список порожній.</exception>
         public T GetAt(int index)
         {
             if (index < 0 || index >= Count)
@@ -124,6 +141,9 @@ namespace lr1.DataStructures
             return current!.Value;
         }
 
+        /// <summary>Повертає індекс елемента.</summary>
+        /// <param name="item">Елемент.</param>
+        /// <returns>Індекс або -1.</returns>
         public int IndexOf(T item)
         {
             if (_head == null) return -1;
@@ -140,6 +160,9 @@ namespace lr1.DataStructures
             return -1;
         }
 
+        /// <summary>Шукає перший елемент за умовою.</summary>
+        /// <param name="predicate">Умова пошуку.</param>
+        /// <returns>Елемент або default.</returns>
         public T? FindFirst(Func<T, bool> predicate)
         {
             if (_head == null) return default;
@@ -156,11 +179,15 @@ namespace lr1.DataStructures
             return default;
         }
 
+        /// <summary>Перевіряє наявність елемента.</summary>
+        /// <param name="item">Елемент.</param>
+        /// <returns>true, якщо знайдено.</returns>
         public bool Contains(T item)
         {
             return IndexOf(item) != -1;
         }
 
+        /// <summary>Очищає список.</summary>
         public void Clear()
         {
             _head = null;
@@ -168,6 +195,8 @@ namespace lr1.DataStructures
             Count = 0;
         }
 
+        /// <summary>Рядкове представлення списку.</summary>
+        /// <returns>Рядок з елементами.</returns>
         public override string ToString()
         {
             List<string> items = new List<string>();
@@ -182,6 +211,7 @@ namespace lr1.DataStructures
             return $"[{string.Join(", ", items)}]";
         }
 
+        /// <summary>Повертає ітератор.</summary>
         public IEnumerator<T> GetEnumerator()
         {
             Node<T>? current = _head;
