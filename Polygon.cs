@@ -5,11 +5,18 @@ using lr1.DataStructures;
 
 namespace lr1
 {
+    /// <summary>Представляє 2D полігон.</summary>
     public class Polygon : Shape
     {
         private MyDynamicArrayBasedList<Point> _vertices;
+
+        /// <summary>Список вершин полігона.</summary>
         public IDataList<Point> Vertices => _vertices;
 
+        /// <summary>Створює полігон з колекції точок.</summary>
+        /// <param name="vertices">Колекція вершин.</param>
+        /// <exception cref="ArgumentNullException">Колекція дорівнює null.</exception>
+        /// <exception cref="ArgumentException">Менше 3 вершин.</exception>
         public Polygon(IEnumerable<Point> vertices)
         {
             if (vertices == null)
@@ -24,6 +31,9 @@ namespace lr1
             }
         }
 
+        /// <summary>Створює полігон з динамічного списку.</summary>
+        /// <param name="vertices">Список вершин.</param>
+        /// <exception cref="ArgumentException">Менше 3 вершин.</exception>
         public Polygon(MyDynamicArrayBasedList<Point> vertices)
         {
             if (vertices == null)
@@ -33,6 +43,8 @@ namespace lr1
             _vertices = vertices;
         }
 
+        /// <summary>Обчислює орієнтовану площу (формула Гаусса).</summary>
+        /// <returns>Площа полігона.</returns>
         public override double GetArea()
         {
             double area = 0;
@@ -45,6 +57,8 @@ namespace lr1
             return Math.Abs(area / 2.0);
         }
 
+        /// <summary>Обчислює периметр.</summary>
+        /// <returns>Сума довжин сторін.</returns>
         public override double GetPerimeter()
         {
             double perimeter = 0;
@@ -55,6 +69,8 @@ namespace lr1
             return perimeter;
         }
 
+        /// <summary>Обчислює геометричний центроїд.</summary>
+        /// <returns>Точка центру мас.</returns>
         public override Point GetCentroid()
         {
             double centerX = 0;
@@ -77,6 +93,8 @@ namespace lr1
             return new Point(centerX / (6 * signedArea), centerY / (6 * signedArea));
         }
 
+        /// <summary>Застосовує трансформацію до всіх вершин.</summary>
+        /// <param name="transformation">Об'єкт трансформації.</param>
         public override void ApplyTransformation(ITransformation transformation)
         {
             for (int i = 0; i < _vertices.Count; i++)
@@ -87,11 +105,15 @@ namespace lr1
             }
         }
 
+        /// <summary>Додає нову вершину.</summary>
+        /// <param name="p">Точка.</param>
         public void AddVertex(Point p)
         {
             _vertices.Add(p);
         }
 
+        /// <summary>Рядкове представлення.</summary>
+        /// <returns>Опис полігона.</returns>
         public override string ToString()
         {
             return $"Polygon with {_vertices.Count} vertices: {_vertices.ToString()}";
