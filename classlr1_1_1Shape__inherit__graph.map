@@ -1,0 +1,13 @@
+<map id="lr1::Shape" name="lr1::Shape">
+<area shape="rect" id="Node000001" title="Абстрактний базовий клас фігури." alt="" coords="203,119,376,264"/>
+<area shape="rect" id="Node000003" href="$classlr1_1_1Circle.html" title="Представляє коло." alt="" coords="5,312,179,537"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,277,181,324,177,320,217,273"/>
+<area shape="rect" id="Node000004" href="$classlr1_1_1Polygon.html" title="Представляє 2D полігон." alt="" coords="203,312,376,537"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="292,278,292,312,287,312,287,278"/>
+<area shape="rect" id="Node000006" href="$classlr1_1_1Segment.html" title="Представляє відрізок прямої." alt="" coords="400,312,573,537"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="362,273,402,320,398,324,358,277"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="260,5,319,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,84,292,118,287,118,287,84"/>
+<area shape="rect" id="Node000005" href="$classlr1_1_1Rectangle.html" title="Представляє прямокутник." alt="" coords="200,585,379,811"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="292,551,292,585,287,585,287,551"/>
+</map>

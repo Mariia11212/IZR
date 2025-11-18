@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LR1: Geometry &amp; Data Structures: Опис проєкту</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LR1: Geometry &amp; Data Structures<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Опис проєкту</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> Проєкт складається з двох основних логічних частин:</p>
+<ol type="1">
+<li><b>Власні структури даних:</b> Динамічний масив (<code>MyDynamicArrayBasedList&lt;T&gt;</code>), що слугує гнучкою альтернативою стандартним колекціям .NET.</li>
+<li><b>Геометрична бібліотека:</b> Набір класів для представлення 2D-фігур, таких як <code>Point</code>, <code>Vector</code>, <code>Rectangle</code>, <code>Circle</code> та виконання над ними трансформацій.</li>
+</ol>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Документація</h1>
+<p>Для забезпечення високої якості коду, його подальшої підтримки та простоти використання було приділено значну увагу документуванню. Весь публічний API (класи, методи, властивості) ретельно задокументовано з використанням стандартного для платформи .NET підходу.</p>
+<h2><a class="anchor" id="autotoc_md2"></a>
+Підхід та інструментарій</h2>
+<p>Основою для документування коду слугують **XML-коментарі (<code>///</code>)**, вбудовані безпосередньо в C#. Цей підхід забезпечує низку ключових переваг:</p>
+<ul>
+<li><b>Інтеграція з IDE</b>: Visual Studio та інші середовища розробки використовують ці коментарі для відображення спливаючих підказок <b>IntelliSense</b>. Це дозволяє розробникам миттєво отримувати інформацію про методи, їхні параметри та очікувані результати, не покидаючи редактор коду.</li>
+<li>**"Жива" документація**: Оскільки документація знаходиться поруч із кодом, її значно легше підтримувати в актуальному стані при внесенні змін.</li>
+<li><b>Автоматична генерація</b>: На основі XML-коментарів можна автоматично створювати професійні зовнішні файли документації (наприклад, у форматі HTML) за допомогою таких інструментів, як <b>DocFX</b>.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Структура та повнота покриття</h2>
+<p>Документацією покрито всі ключові аспекти публічного API, що визначають контракт взаємодії з бібліотекою:</p>
+<ul>
+<li>**Призначення (<code>&lt;summary&gt;</code>)**: Кожен публічний клас, структура, метод та властивість мають чіткий опис свого призначення.</li>
+<li>**Параметри (<code>&lt;param&gt;</code>)**: Для кожного параметра методу вказано його роль, очікувані значення та можливі обмеження.</li>
+<li>**Значення, що повертаються (<code>&lt;returns&gt;</code>)**: Детально описано, що саме повертає метод, особливо в неочевидних випадках (наприклад, повернення <code>-1</code> методом <code>IndexOf</code>, якщо елемент не знайдено).</li>
+<li>**Винятки (<code>&lt;exception&gt;</code>)**: Задокументовано всі типи винятків, які може генерувати метод, та умови, за яких вони виникають.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Юніт-тестування</h1>
+<p>Для перевірки коректності роботи реалізованих модулів було створено комплексний набір юніт-тестів.</p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Фреймворк</h2>
+<p>Тести розроблено з використанням фреймворку <b>NUnit</b>, який є одним зі стандартів для тестування у .NET-екосистемі.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Тестове покриття</h2>
+<p>Юніт-тестами покрито наступні ключові модулі та функціональність:</p>
+<ul>
+<li>**<code>MyDynamicArrayBasedList&lt;T&gt;</code>**: Створення, операції з елементами, пошук, автоматичне розширення та обробка граничних випадків.</li>
+<li>**<code>Vector</code> та <code>Point</code>**: Створення, математичні обчислення та операції трансформації.</li>
+<li>**<code>Translation</code>**: Застосування трансформації переміщення до геометричних фігур.</li>
+<li>**<code>Rectangle</code> та <code>Circle</code>**: Валідація даних, обчислення властивостей та застосування трансформацій.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Детальний опис тестового покриття</h2>
+<h3><a class="anchor" id="autotoc_md8"></a>
+&lt;tt&gt;MyDynamicArrayBasedList&lt;T&gt;&lt;/tt&gt; (Динамічний масив)</h3>
+<ul>
+<li><b>Створення та ініціалізація:</b><ul>
+<li>Перевіряється, що щойно створений список є порожнім (<code>Count</code> дорівнює 0).</li>
+</ul>
+</li>
+<li><b>Додавання та зміна розміру:</b><ul>
+<li>Тестується, що метод <code>Add</code> коректно збільшує лічильник елементів.</li>
+<li>Перевіряється автоматичне розширення внутрішньої ємності при перевищенні початкового ліміту.</li>
+</ul>
+</li>
+<li><b>Доступ та пошук елементів:</b><ul>
+<li>Перевіряється коректність отримання елемента за валідним індексом (<code>GetAt</code>) та генерація винятку <code>ArgumentOutOfRangeException</code> для невалідних індексів.</li>
+<li>Тестується, що <code>IndexOf</code> правильно знаходить індекс першого входження елемента та повертає <code>-1</code>, якщо його немає.</li>
+<li>Перевіряється робота <code>FindFirst</code> для пошуку елемента за умовою.</li>
+</ul>
+</li>
+<li><b>Вставка та видалення:</b><ul>
+<li>Перевіряється коректність вставки (<code>InsertAt</code>) та видалення (<code>RemoveAt</code>) елементів з різних позицій у списку.</li>
+</ul>
+</li>
+<li><b>Очищення та ітерація:</b><ul>
+<li>Тестується, що метод <code>Clear</code> повністю очищує список.</li>
+<li>Перевіряється, що ітератор (<code>foreach</code>) коректно працює як на заповненому, так і на порожньому списку.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md9"></a>
+&lt;tt&gt;Vector&lt;/tt&gt; та &lt;tt&gt;Point&lt;/tt&gt; (Вектор та Точка)</h3>
+<ul>
+<li><b>Ініціалізація:</b><ul>
+<li>Перевіряється, що конструктори правильно встановлюють координати.</li>
+</ul>
+</li>
+<li><b>Математичні операції:</b><ul>
+<li>Тестується коректність обчислення довжини вектора та відстані між точками.</li>
+</ul>
+</li>
+<li><b>Трансформації та незмінність (Immutability):</b><ul>
+<li>Перевіряється, що методи <code>Scale</code> та <code>Translate</code> повертають <b>новий</b> об'єкт, не змінюючи оригінальний.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md10"></a>
+&lt;tt&gt;Rectangle&lt;/tt&gt; та &lt;tt&gt;Circle&lt;/tt&gt; (Прямокутник та Коло)</h3>
+<ul>
+<li><b>Валідація в конструкторі:</b><ul>
+<li>Тестується генерація винятку <code>ArgumentException</code> при спробі створити фігуру з невалідними параметрами (нульові або від'ємні розміри/радіус).</li>
+</ul>
+</li>
+<li><b>Обчислення властивостей:</b><ul>
+<li>Перевіряється коректність розрахунку площі (<code>GetArea</code>) та периметра (<code>GetPerimeter</code>).</li>
+</ul>
+</li>
+<li><b>Застосування трансформацій:</b><ul>
+<li>Тестується коректність зміщення фігур за допомогою <code>Translation</code>.</li>
+<li>Перевіряється обробка <code>null</code>, <code>NaN</code> та <code>Infinity</code> значень під час трансформацій.</li>
+</ul>
+</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md11"></a>
+Вдосконалення коду тестів</h1>
+<p>Під час розробки тестів було застосовано низку сучасних практик для забезпечення їхньої якості та надійності:</p>
+<ul>
+<li><b>Усунення дублювання коду</b>: Повторювана ініціалізація об'єктів винесена у метод <code>[SetUp]</code>.</li>
+<li><b>Підвищення читабельності</b>: Назви тестів було спрощено, а зайві коментарі та невикористовувані простори імен видалено.</li>
+<li><b>Оптимізація тестів</b>: Схожі сценарії перевірки винятків об'єднано за допомогою атрибута <code>[TestCase]</code>.</li>
+<li><b>Розширення тестового покриття</b>: Додано тести для важливих граничних випадків (робота з початком/кінцем списку, ітерація по порожньому списку).</li>
+<li><b>Гарантія незмінності (Immutability)</b>: Додано перевірки, що методи <code>Scale</code> та <code>Translate</code> повертають <b>новий екземпляр</b> об'єкта.</li>
+<li><b>Надійність обробки даних</b>: Реалізовано тести, що перевіряють коректну обробку невалідних (<code>NaN</code>, <code>Infinity</code>) або <code>null</code> трансформацій.</li>
+<li><b>Стандартизація коду</b>: Точність порівняння чисел з плаваючою комою стандартизовано за допомогою константи (<code>Eps = 1e-3</code>). </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

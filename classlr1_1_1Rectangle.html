@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LR1: Geometry &amp; Data Structures: Клас lr1::Rectangle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LR1: Geometry &amp; Data Structures<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelr1.html">lr1</a></li><li class="navelem"><a class="el" href="classlr1_1_1Rectangle.html">Rectangle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Загальнодоступні елементи</a> &#124;
+<a href="#pub-attribs">Загальнодоступні атрибути</a> &#124;
+<a href="#pri-static-methods">Приватні статичні елементи</a> &#124;
+<a href="#pri-attribs">Приватні дані</a> &#124;
+<a href="classlr1_1_1Rectangle-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас lr1::Rectangle</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Представляє прямокутник.  
+ <a href="classlr1_1_1Rectangle.html#details">Детальніше...</a></p>
+<div class="dynheader">
+Схема успадкувань для lr1::Rectangle</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1Rectangle__inherit__graph.png" border="0" usemap="#alr1_1_1Rectangle_inherit__map" alt="Inheritance graph"/></div>
+<map name="alr1_1_1Rectangle_inherit__map" id="alr1_1_1Rectangle_inherit__map">
+<area shape="rect" title="Представляє прямокутник." alt="" coords="5,585,184,811"/>
+<area shape="rect" href="classlr1_1_1Polygon.html" title="Представляє 2D полігон." alt="" coords="8,312,181,537"/>
+<area shape="poly" title=" " alt="" coords="97,551,97,585,92,585,92,551"/>
+<area shape="rect" href="classlr1_1_1Shape.html" title="Абстрактний базовий клас фігури." alt="" coords="8,119,181,264"/>
+<area shape="poly" title=" " alt="" coords="97,278,97,312,92,312,92,278"/>
+<area shape="rect" title=" " alt="" coords="65,5,124,71"/>
+<area shape="poly" title=" " alt="" coords="97,84,97,118,92,118,92,84"/>
+</map>
+</div>
+<div class="dynheader">
+Діаграма зв'язків класу lr1::Rectangle:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1Rectangle__coll__graph.png" border="0" usemap="#alr1_1_1Rectangle_coll__map" alt="Collaboration graph"/></div>
+<map name="alr1_1_1Rectangle_coll__map" id="alr1_1_1Rectangle_coll__map">
+<area shape="rect" title="Представляє прямокутник." alt="" coords="135,603,313,808"/>
+<area shape="rect" href="classlr1_1_1Polygon.html" title="Представляє 2D полігон." alt="" coords="5,315,179,540"/>
+<area shape="poly" title=" " alt="" coords="154,551,178,601,173,604,149,554"/>
+<area shape="rect" href="classlr1_1_1Shape.html" title="Абстрактний базовий клас фігури." alt="" coords="5,120,179,265"/>
+<area shape="poly" title=" " alt="" coords="95,279,95,315,89,315,89,279"/>
+<area shape="rect" title=" " alt="" coords="63,5,121,71"/>
+<area shape="poly" title=" " alt="" coords="95,84,95,120,89,120,89,84"/>
+<area shape="rect" href="classlr1_1_1Point.html" title="2D точка." alt="" coords="203,345,336,510"/>
+<area shape="poly" title=" " alt="" coords="259,511,246,587,241,586,253,510"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Загальнодоступні елементи</h2></td></tr>
+<tr class="memitem:a99dff54cc9a11f461d99fc9a3a6451ae" id="r_a99dff54cc9a11f461d99fc9a3a6451ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a99dff54cc9a11f461d99fc9a3a6451ae">Rectangle</a> (<a class="el" href="classlr1_1_1Point.html">Point</a> topLeft, double width, double height)</td></tr>
+<tr class="memdesc:a99dff54cc9a11f461d99fc9a3a6451ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Створює прямокутник.  <br /></td></tr>
+<tr class="separator:a99dff54cc9a11f461d99fc9a3a6451ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406b543f52d24f6c39ec6d6452361f02" id="r_a406b543f52d24f6c39ec6d6452361f02"><td class="memItemLeft" align="right" valign="top">override double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a406b543f52d24f6c39ec6d6452361f02">GetArea</a> ()</td></tr>
+<tr class="memdesc:a406b543f52d24f6c39ec6d6452361f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює площу.  <br /></td></tr>
+<tr class="separator:a406b543f52d24f6c39ec6d6452361f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3835a12b076366cd5501e771ce94757d" id="r_a3835a12b076366cd5501e771ce94757d"><td class="memItemLeft" align="right" valign="top">override double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a3835a12b076366cd5501e771ce94757d">GetPerimeter</a> ()</td></tr>
+<tr class="memdesc:a3835a12b076366cd5501e771ce94757d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює периметр.  <br /></td></tr>
+<tr class="separator:a3835a12b076366cd5501e771ce94757d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d98d334221af9e94685bdc8c7af6de" id="r_a20d98d334221af9e94685bdc8c7af6de"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a20d98d334221af9e94685bdc8c7af6de">ApplyTransformation</a> (ITransformation transformation)</td></tr>
+<tr class="memdesc:a20d98d334221af9e94685bdc8c7af6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Застосовує трансформацію.  <br /></td></tr>
+<tr class="separator:a20d98d334221af9e94685bdc8c7af6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f04da8d5398ae1811464e439ec91c91" id="r_a2f04da8d5398ae1811464e439ec91c91"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a2f04da8d5398ae1811464e439ec91c91">ToString</a> ()</td></tr>
+<tr class="memdesc:a2f04da8d5398ae1811464e439ec91c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рядкове представлення.  <br /></td></tr>
+<tr class="separator:a2f04da8d5398ae1811464e439ec91c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Загальнодоступні атрибути</h2></td></tr>
+<tr class="memitem:a959a030835198576a504878891ce7870" id="r_a959a030835198576a504878891ce7870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a959a030835198576a504878891ce7870">TopLeft</a> { get</td></tr>
+<tr class="memdesc:a959a030835198576a504878891ce7870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Лівий верхній кут.  <br /></td></tr>
+<tr class="separator:a959a030835198576a504878891ce7870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcea9aa1f5a78ab3a2a7de1abe6fb04" id="r_a7dcea9aa1f5a78ab3a2a7de1abe6fb04"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a7dcea9aa1f5a78ab3a2a7de1abe6fb04">Width</a> { get</td></tr>
+<tr class="memdesc:a7dcea9aa1f5a78ab3a2a7de1abe6fb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ширина.  <br /></td></tr>
+<tr class="separator:a7dcea9aa1f5a78ab3a2a7de1abe6fb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9e0ddf02b1551613ab2b23b620003e0" id="r_ac9e0ddf02b1551613ab2b23b620003e0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#ac9e0ddf02b1551613ab2b23b620003e0">Height</a> { get</td></tr>
+<tr class="memdesc:ac9e0ddf02b1551613ab2b23b620003e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Висота.  <br /></td></tr>
+<tr class="separator:ac9e0ddf02b1551613ab2b23b620003e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Приватні статичні елементи</h2></td></tr>
+<tr class="memitem:a87bf8d12e532e1070f1e97f63abd120c" id="r_a87bf8d12e532e1070f1e97f63abd120c"><td class="memItemLeft" align="right" valign="top">static MyDynamicArrayBasedList&lt; <a class="el" href="classlr1_1_1Point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a87bf8d12e532e1070f1e97f63abd120c">GetRectangleVertices</a> (<a class="el" href="classlr1_1_1Point.html">Point</a> topLeft, double width, double height)</td></tr>
+<tr class="separator:a87bf8d12e532e1070f1e97f63abd120c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Приватні дані</h2></td></tr>
+<tr class="memitem:a9c48ec41d4c6087b046866f34319ea6d" id="r_a9c48ec41d4c6087b046866f34319ea6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Rectangle.html#a9c48ec41d4c6087b046866f34319ea6d">set</a></td></tr>
+<tr class="separator:a9c48ec41d4c6087b046866f34319ea6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classlr1_1_1Polygon"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classlr1_1_1Polygon')"><img src="closed.png" alt="-"/>&#160;Приватні дані успадковано з <a class="el" href="classlr1_1_1Polygon.html">lr1::Polygon</a></td></tr>
+<tr class="memitem:af9acd967f045cf9fb754825c248b4c08 inherit pub_attribs_classlr1_1_1Polygon" id="r_af9acd967f045cf9fb754825c248b4c08"><td class="memItemLeft" align="right" valign="top">IDataList&lt; <a class="el" href="classlr1_1_1Point.html">Point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#af9acd967f045cf9fb754825c248b4c08">Vertices</a> =&gt; <a class="el" href="classlr1_1_1Polygon.html#aeeedbca6e4e6770a4241731fb10eaa69">_vertices</a></td></tr>
+<tr class="memdesc:af9acd967f045cf9fb754825c248b4c08 inherit pub_attribs_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Список вершин полігона.  <br /></td></tr>
+<tr class="separator:af9acd967f045cf9fb754825c248b4c08 inherit pub_attribs_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Додаткові успадковані елементи</h2></td></tr>
+<tr class="inherit_header pub_methods_classlr1_1_1Polygon"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlr1_1_1Polygon')"><img src="closed.png" alt="-"/>&#160;Приватні елементи успадковано з <a class="el" href="classlr1_1_1Polygon.html">lr1::Polygon</a></td></tr>
+<tr class="memitem:a198b55497e8de763da31f1cdf3c236e3 inherit pub_methods_classlr1_1_1Polygon" id="r_a198b55497e8de763da31f1cdf3c236e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#a198b55497e8de763da31f1cdf3c236e3">Polygon</a> (IEnumerable&lt; <a class="el" href="classlr1_1_1Point.html">Point</a> &gt; vertices)</td></tr>
+<tr class="memdesc:a198b55497e8de763da31f1cdf3c236e3 inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Створює полігон з колекції точок.  <br /></td></tr>
+<tr class="separator:a198b55497e8de763da31f1cdf3c236e3 inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca0e33cd2b0c4996d398492a093fcb7 inherit pub_methods_classlr1_1_1Polygon" id="r_abca0e33cd2b0c4996d398492a093fcb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#abca0e33cd2b0c4996d398492a093fcb7">Polygon</a> (MyDynamicArrayBasedList&lt; <a class="el" href="classlr1_1_1Point.html">Point</a> &gt; vertices)</td></tr>
+<tr class="memdesc:abca0e33cd2b0c4996d398492a093fcb7 inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Створює полігон з динамічного списку.  <br /></td></tr>
+<tr class="separator:abca0e33cd2b0c4996d398492a093fcb7 inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a696a3514f595f57de53cfa4d67348f04 inherit pub_methods_classlr1_1_1Polygon" id="r_a696a3514f595f57de53cfa4d67348f04"><td class="memItemLeft" align="right" valign="top">override double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#a696a3514f595f57de53cfa4d67348f04">GetArea</a> ()</td></tr>
+<tr class="memdesc:a696a3514f595f57de53cfa4d67348f04 inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює орієнтовану площу (формула Гаусса).  <br /></td></tr>
+<tr class="separator:a696a3514f595f57de53cfa4d67348f04 inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964bd89ee3ba19d12d39bc882ee7a94e inherit pub_methods_classlr1_1_1Polygon" id="r_a964bd89ee3ba19d12d39bc882ee7a94e"><td class="memItemLeft" align="right" valign="top">override double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#a964bd89ee3ba19d12d39bc882ee7a94e">GetPerimeter</a> ()</td></tr>
+<tr class="memdesc:a964bd89ee3ba19d12d39bc882ee7a94e inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює периметр.  <br /></td></tr>
+<tr class="separator:a964bd89ee3ba19d12d39bc882ee7a94e inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfeae13368e5b0a526a6eea1d7242f48 inherit pub_methods_classlr1_1_1Polygon" id="r_abfeae13368e5b0a526a6eea1d7242f48"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#abfeae13368e5b0a526a6eea1d7242f48">GetCentroid</a> ()</td></tr>
+<tr class="memdesc:abfeae13368e5b0a526a6eea1d7242f48 inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює геометричний центроїд.  <br /></td></tr>
+<tr class="separator:abfeae13368e5b0a526a6eea1d7242f48 inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54dd997670c6a6ca242cd1fb94776024 inherit pub_methods_classlr1_1_1Polygon" id="r_a54dd997670c6a6ca242cd1fb94776024"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#a54dd997670c6a6ca242cd1fb94776024">ApplyTransformation</a> (ITransformation transformation)</td></tr>
+<tr class="memdesc:a54dd997670c6a6ca242cd1fb94776024 inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Застосовує трансформацію до всіх вершин.  <br /></td></tr>
+<tr class="separator:a54dd997670c6a6ca242cd1fb94776024 inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e459a7b28891ff5d190512676aa9a59 inherit pub_methods_classlr1_1_1Polygon" id="r_a2e459a7b28891ff5d190512676aa9a59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#a2e459a7b28891ff5d190512676aa9a59">AddVertex</a> (<a class="el" href="classlr1_1_1Point.html">Point</a> p)</td></tr>
+<tr class="memdesc:a2e459a7b28891ff5d190512676aa9a59 inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Додає нову вершину.  <br /></td></tr>
+<tr class="separator:a2e459a7b28891ff5d190512676aa9a59 inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ef0c62fbd74ae78632dbc7392bd0756 inherit pub_methods_classlr1_1_1Polygon" id="r_a2ef0c62fbd74ae78632dbc7392bd0756"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Polygon.html#a2ef0c62fbd74ae78632dbc7392bd0756">ToString</a> ()</td></tr>
+<tr class="memdesc:a2ef0c62fbd74ae78632dbc7392bd0756 inherit pub_methods_classlr1_1_1Polygon"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рядкове представлення.  <br /></td></tr>
+<tr class="separator:a2ef0c62fbd74ae78632dbc7392bd0756 inherit pub_methods_classlr1_1_1Polygon"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Представляє прямокутник. </p>
+</div><h2 class="groupheader">Конструктор(и)</h2>
+<a id="a99dff54cc9a11f461d99fc9a3a6451ae" name="a99dff54cc9a11f461d99fc9a3a6451ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99dff54cc9a11f461d99fc9a3a6451ae">&#9670;&#160;</a></span>Rectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::Rectangle::Rectangle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td>
+          <td class="paramname"><em>topLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Створює прямокутник. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">topLeft</td><td>Лівий верхній кут.</td></tr>
+    <tr><td class="paramname">width</td><td>Ширина (&gt;0).</td></tr>
+    <tr><td class="paramname">height</td><td>Висота (&gt;0).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>Розміри некоректні.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Опис методів компонент</h2>
+<a id="a20d98d334221af9e94685bdc8c7af6de" name="a20d98d334221af9e94685bdc8c7af6de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d98d334221af9e94685bdc8c7af6de">&#9670;&#160;</a></span>ApplyTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void lr1::Rectangle::ApplyTransformation </td>
+          <td>(</td>
+          <td class="paramtype">ITransformation&#160;</td>
+          <td class="paramname"><em>transformation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Застосовує трансформацію. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transformation</td><td>Об'єкт трансформації.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a406b543f52d24f6c39ec6d6452361f02" name="a406b543f52d24f6c39ec6d6452361f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406b543f52d24f6c39ec6d6452361f02">&#9670;&#160;</a></span>GetArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override double lr1::Rectangle::GetArea </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обчислює площу. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Площа прямокутника.</dd></dl>
+
+</div>
+</div>
+<a id="a3835a12b076366cd5501e771ce94757d" name="a3835a12b076366cd5501e771ce94757d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3835a12b076366cd5501e771ce94757d">&#9670;&#160;</a></span>GetPerimeter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override double lr1::Rectangle::GetPerimeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обчислює периметр. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Периметр прямокутника.</dd></dl>
+
+</div>
+</div>
+<a id="a87bf8d12e532e1070f1e97f63abd120c" name="a87bf8d12e532e1070f1e97f63abd120c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87bf8d12e532e1070f1e97f63abd120c">&#9670;&#160;</a></span>GetRectangleVertices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static MyDynamicArrayBasedList&lt; <a class="el" href="classlr1_1_1Point.html">Point</a> &gt; lr1::Rectangle::GetRectangleVertices </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td>
+          <td class="paramname"><em>topLeft</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2f04da8d5398ae1811464e439ec91c91" name="a2f04da8d5398ae1811464e439ec91c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f04da8d5398ae1811464e439ec91c91">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string lr1::Rectangle::ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рядкове представлення. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Опис прямокутника.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Компонентні дані</h2>
+<a id="ac9e0ddf02b1551613ab2b23b620003e0" name="ac9e0ddf02b1551613ab2b23b620003e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9e0ddf02b1551613ab2b23b620003e0">&#9670;&#160;</a></span>Height</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double lr1::Rectangle::Height { get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Висота. </p>
+
+</div>
+</div>
+<a id="a9c48ec41d4c6087b046866f34319ea6d" name="a9c48ec41d4c6087b046866f34319ea6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c48ec41d4c6087b046866f34319ea6d">&#9670;&#160;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::Rectangle::set</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a959a030835198576a504878891ce7870" name="a959a030835198576a504878891ce7870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a959a030835198576a504878891ce7870">&#9670;&#160;</a></span>TopLeft</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlr1_1_1Point.html">Point</a> lr1::Rectangle::TopLeft { get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Лівий верхній кут. </p>
+
+</div>
+</div>
+<a id="a7dcea9aa1f5a78ab3a2a7de1abe6fb04" name="a7dcea9aa1f5a78ab3a2a7de1abe6fb04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dcea9aa1f5a78ab3a2a7de1abe6fb04">&#9670;&#160;</a></span>Width</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double lr1::Rectangle::Width { get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ширина. </p>
+
+</div>
+</div>
+<hr/>Документація цього класу була створена з файлу:<ul>
+<li><a class="el" href="Rectangle_8cs.html">Rectangle.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

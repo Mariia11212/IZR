@@ -1,0 +1,5 @@
+<map id="lr1::Shape::DisplayInfo" name="lr1::Shape::DisplayInfo">
+<area shape="rect" id="Node000001" title="Виводить інформацію в консоль." alt="" coords="196,5,365,31"/>
+<area shape="rect" id="Node000002" href="$classlr1_1_1Program.html#affddf1bfabe64447be5c643bed74d6ff" title="Точка входу в програму. Виконує демонстраційні сценарії для розділів &quot;Геометрія&quot; та &quot;Структури даних&quot;..." alt="" coords="5,5,148,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,21,148,21,148,15,182,15"/>
+</map>

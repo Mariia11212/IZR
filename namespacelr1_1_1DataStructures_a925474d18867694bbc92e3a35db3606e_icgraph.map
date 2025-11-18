@@ -1,0 +1,6 @@
+<map id="lr1::DataStructures::Add" name="lr1::DataStructures::Add">
+<area shape="rect" id="Node000001" title="Додає елемент." alt="" coords="200,29,377,55"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="326,20,316,11,289,8,267,10,255,15,252,20,259,28,255,31,247,21,251,11,265,5,289,3,318,6,329,15"/>
+<area shape="rect" id="Node000002" href="$classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a25ed6546a18dbfb4223830547aac686f" title="Вставляє елемент за індексом." alt="" coords="5,15,152,69"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="186,45,152,45,152,39,186,39"/>
+</map>

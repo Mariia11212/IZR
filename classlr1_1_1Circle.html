@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LR1: Geometry &amp; Data Structures: Клас lr1::Circle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LR1: Geometry &amp; Data Structures<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelr1.html">lr1</a></li><li class="navelem"><a class="el" href="classlr1_1_1Circle.html">Circle</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Загальнодоступні елементи</a> &#124;
+<a href="#pub-attribs">Загальнодоступні атрибути</a> &#124;
+<a href="#pri-attribs">Приватні дані</a> &#124;
+<a href="classlr1_1_1Circle-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас lr1::Circle</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Представляє коло.  
+ <a href="classlr1_1_1Circle.html#details">Детальніше...</a></p>
+<div class="dynheader">
+Схема успадкувань для lr1::Circle</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1Circle__inherit__graph.png" border="0" usemap="#alr1_1_1Circle_inherit__map" alt="Inheritance graph"/></div>
+<map name="alr1_1_1Circle_inherit__map" id="alr1_1_1Circle_inherit__map">
+<area shape="rect" title="Представляє коло." alt="" coords="5,312,179,537"/>
+<area shape="rect" href="classlr1_1_1Shape.html" title="Абстрактний базовий клас фігури." alt="" coords="5,119,179,264"/>
+<area shape="poly" title=" " alt="" coords="95,278,95,312,89,312,89,278"/>
+<area shape="rect" title=" " alt="" coords="63,5,121,71"/>
+<area shape="poly" title=" " alt="" coords="95,84,95,118,89,118,89,84"/>
+</map>
+</div>
+<div class="dynheader">
+Діаграма зв'язків класу lr1::Circle:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1Circle__coll__graph.png" border="0" usemap="#alr1_1_1Circle_coll__map" alt="Collaboration graph"/></div>
+<map name="alr1_1_1Circle_coll__map" id="alr1_1_1Circle_coll__map">
+<area shape="rect" title="Представляє коло." alt="" coords="137,348,311,553"/>
+<area shape="rect" href="classlr1_1_1Shape.html" title="Абстрактний базовий клас фігури." alt="" coords="5,130,179,275"/>
+<area shape="poly" title=" " alt="" coords="139,286,172,347,167,349,135,289"/>
+<area shape="rect" title=" " alt="" coords="63,5,121,71"/>
+<area shape="poly" title=" " alt="" coords="95,84,95,130,89,130,89,84"/>
+<area shape="rect" href="classlr1_1_1Point.html" title="2D точка." alt="" coords="203,120,336,285"/>
+<area shape="poly" title=" " alt="" coords="257,286,248,332,243,331,252,285"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Загальнодоступні елементи</h2></td></tr>
+<tr class="memitem:a73685db66f9ef800b27f022409cde903" id="r_a73685db66f9ef800b27f022409cde903"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a73685db66f9ef800b27f022409cde903">Circle</a> (<a class="el" href="classlr1_1_1Point.html">Point</a> center, double radius)</td></tr>
+<tr class="memdesc:a73685db66f9ef800b27f022409cde903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Створює коло.  <br /></td></tr>
+<tr class="separator:a73685db66f9ef800b27f022409cde903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9797e05054333b4b6258935721e82a60" id="r_a9797e05054333b4b6258935721e82a60"><td class="memItemLeft" align="right" valign="top">override double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a9797e05054333b4b6258935721e82a60">GetArea</a> ()</td></tr>
+<tr class="memdesc:a9797e05054333b4b6258935721e82a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює площу.  <br /></td></tr>
+<tr class="separator:a9797e05054333b4b6258935721e82a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef0f22b15987ada0bd9169b0cb26be8" id="r_a3ef0f22b15987ada0bd9169b0cb26be8"><td class="memItemLeft" align="right" valign="top">override double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a3ef0f22b15987ada0bd9169b0cb26be8">GetPerimeter</a> ()</td></tr>
+<tr class="memdesc:a3ef0f22b15987ada0bd9169b0cb26be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює довжину кола.  <br /></td></tr>
+<tr class="separator:a3ef0f22b15987ada0bd9169b0cb26be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27f18f6f6bb4e15d8b3f2978a43b66f4" id="r_a27f18f6f6bb4e15d8b3f2978a43b66f4"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a27f18f6f6bb4e15d8b3f2978a43b66f4">GetCentroid</a> ()</td></tr>
+<tr class="memdesc:a27f18f6f6bb4e15d8b3f2978a43b66f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає центр фігури.  <br /></td></tr>
+<tr class="separator:a27f18f6f6bb4e15d8b3f2978a43b66f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374fb5e294d6668f30eff0ca639679f2" id="r_a374fb5e294d6668f30eff0ca639679f2"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a374fb5e294d6668f30eff0ca639679f2">ApplyTransformation</a> (ITransformation transformation)</td></tr>
+<tr class="memdesc:a374fb5e294d6668f30eff0ca639679f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Застосовує трансформацію.  <br /></td></tr>
+<tr class="separator:a374fb5e294d6668f30eff0ca639679f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bd2b5e2da44da29ca2a23d88984d86" id="r_a78bd2b5e2da44da29ca2a23d88984d86"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a78bd2b5e2da44da29ca2a23d88984d86">ContainsPoint</a> (<a class="el" href="classlr1_1_1Point.html">Point</a> p)</td></tr>
+<tr class="memdesc:a78bd2b5e2da44da29ca2a23d88984d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи містить коло точку.  <br /></td></tr>
+<tr class="separator:a78bd2b5e2da44da29ca2a23d88984d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75eccfa08d5b567d78e09b2a9c4f352" id="r_ac75eccfa08d5b567d78e09b2a9c4f352"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#ac75eccfa08d5b567d78e09b2a9c4f352">ToString</a> ()</td></tr>
+<tr class="memdesc:ac75eccfa08d5b567d78e09b2a9c4f352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рядкове представлення.  <br /></td></tr>
+<tr class="separator:ac75eccfa08d5b567d78e09b2a9c4f352"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Загальнодоступні атрибути</h2></td></tr>
+<tr class="memitem:a3a77a5c57e96aec41441d9f64933a7d6" id="r_a3a77a5c57e96aec41441d9f64933a7d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a3a77a5c57e96aec41441d9f64933a7d6">Center</a> { get</td></tr>
+<tr class="memdesc:a3a77a5c57e96aec41441d9f64933a7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Центр кола.  <br /></td></tr>
+<tr class="separator:a3a77a5c57e96aec41441d9f64933a7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11413c9f282c4c7e47428fc8167d1057" id="r_a11413c9f282c4c7e47428fc8167d1057"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a11413c9f282c4c7e47428fc8167d1057">Radius</a> { get</td></tr>
+<tr class="memdesc:a11413c9f282c4c7e47428fc8167d1057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Радіус кола.  <br /></td></tr>
+<tr class="separator:a11413c9f282c4c7e47428fc8167d1057"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Приватні дані</h2></td></tr>
+<tr class="memitem:a6979aa26706b5d51a21de3aae5d28252" id="r_a6979aa26706b5d51a21de3aae5d28252"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Circle.html#a6979aa26706b5d51a21de3aae5d28252">set</a></td></tr>
+<tr class="separator:a6979aa26706b5d51a21de3aae5d28252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Додаткові успадковані елементи</h2></td></tr>
+<tr class="inherit_header pub_methods_classlr1_1_1Shape"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlr1_1_1Shape')"><img src="closed.png" alt="-"/>&#160;Приватні елементи успадковано з <a class="el" href="classlr1_1_1Shape.html">lr1::Shape</a></td></tr>
+<tr class="memitem:a4898b349367461671ca14b3a9deecc49 inherit pub_methods_classlr1_1_1Shape" id="r_a4898b349367461671ca14b3a9deecc49"><td class="memItemLeft" align="right" valign="top">abstract double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Shape.html#a4898b349367461671ca14b3a9deecc49">GetArea</a> ()</td></tr>
+<tr class="memdesc:a4898b349367461671ca14b3a9deecc49 inherit pub_methods_classlr1_1_1Shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює площу.  <br /></td></tr>
+<tr class="separator:a4898b349367461671ca14b3a9deecc49 inherit pub_methods_classlr1_1_1Shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9030e358f56ee968bfc09504b0f80bc2 inherit pub_methods_classlr1_1_1Shape" id="r_a9030e358f56ee968bfc09504b0f80bc2"><td class="memItemLeft" align="right" valign="top">abstract double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Shape.html#a9030e358f56ee968bfc09504b0f80bc2">GetPerimeter</a> ()</td></tr>
+<tr class="memdesc:a9030e358f56ee968bfc09504b0f80bc2 inherit pub_methods_classlr1_1_1Shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обчислює периметр.  <br /></td></tr>
+<tr class="separator:a9030e358f56ee968bfc09504b0f80bc2 inherit pub_methods_classlr1_1_1Shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ac67f838e8d29e1d55e110f863efaa inherit pub_methods_classlr1_1_1Shape" id="r_a34ac67f838e8d29e1d55e110f863efaa"><td class="memItemLeft" align="right" valign="top">abstract <a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Shape.html#a34ac67f838e8d29e1d55e110f863efaa">GetCentroid</a> ()</td></tr>
+<tr class="memdesc:a34ac67f838e8d29e1d55e110f863efaa inherit pub_methods_classlr1_1_1Shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає геометричний центр.  <br /></td></tr>
+<tr class="separator:a34ac67f838e8d29e1d55e110f863efaa inherit pub_methods_classlr1_1_1Shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8379e44b5469d4fcbdd910c7cf1a17ab inherit pub_methods_classlr1_1_1Shape" id="r_a8379e44b5469d4fcbdd910c7cf1a17ab"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Shape.html#a8379e44b5469d4fcbdd910c7cf1a17ab">ApplyTransformation</a> (ITransformation transformation)</td></tr>
+<tr class="memdesc:a8379e44b5469d4fcbdd910c7cf1a17ab inherit pub_methods_classlr1_1_1Shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">Застосовує трансформацію.  <br /></td></tr>
+<tr class="separator:a8379e44b5469d4fcbdd910c7cf1a17ab inherit pub_methods_classlr1_1_1Shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c6e65f954419aafdd2ebebab156c12 inherit pub_methods_classlr1_1_1Shape" id="r_a70c6e65f954419aafdd2ebebab156c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1Shape.html#a70c6e65f954419aafdd2ebebab156c12">DisplayInfo</a> ()</td></tr>
+<tr class="memdesc:a70c6e65f954419aafdd2ebebab156c12 inherit pub_methods_classlr1_1_1Shape"><td class="mdescLeft">&#160;</td><td class="mdescRight">Виводить інформацію в консоль.  <br /></td></tr>
+<tr class="separator:a70c6e65f954419aafdd2ebebab156c12 inherit pub_methods_classlr1_1_1Shape"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Представляє коло. </p>
+</div><h2 class="groupheader">Конструктор(и)</h2>
+<a id="a73685db66f9ef800b27f022409cde903" name="a73685db66f9ef800b27f022409cde903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73685db66f9ef800b27f022409cde903">&#9670;&#160;</a></span>Circle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::Circle::Circle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td>
+          <td class="paramname"><em>center</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>radius</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Створює коло. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>Центр.</td></tr>
+    <tr><td class="paramname">radius</td><td>Радіус (&gt;0).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentException</td><td>Радіус некоректний.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Опис методів компонент</h2>
+<a id="a374fb5e294d6668f30eff0ca639679f2" name="a374fb5e294d6668f30eff0ca639679f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a374fb5e294d6668f30eff0ca639679f2">&#9670;&#160;</a></span>ApplyTransformation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void lr1::Circle::ApplyTransformation </td>
+          <td>(</td>
+          <td class="paramtype">ITransformation&#160;</td>
+          <td class="paramname"><em>transformation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Застосовує трансформацію. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">transformation</td><td>Об'єкт трансформації.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a78bd2b5e2da44da29ca2a23d88984d86" name="a78bd2b5e2da44da29ca2a23d88984d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bd2b5e2da44da29ca2a23d88984d86">&#9670;&#160;</a></span>ContainsPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lr1::Circle::ContainsPoint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlr1_1_1Point.html">Point</a>&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи містить коло точку. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Точка.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо точка всередині.</dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1Circle_a78bd2b5e2da44da29ca2a23d88984d86_cgraph.png" border="0" usemap="#aclasslr1_1_1Circle_a78bd2b5e2da44da29ca2a23d88984d86_cgraph" alt=""/></div>
+<map name="aclasslr1_1_1Circle_a78bd2b5e2da44da29ca2a23d88984d86_cgraph" id="aclasslr1_1_1Circle_a78bd2b5e2da44da29ca2a23d88984d86_cgraph">
+<area shape="rect" title="Перевіряє, чи містить коло точку." alt="" coords="5,5,188,31"/>
+<area shape="rect" href="classlr1_1_1Point.html#aee0834fa54f3438e8f1e7ad9cc8e31f5" title="Обчислює відстань до іншої точки." alt="" coords="236,5,419,31"/>
+<area shape="poly" title=" " alt="" coords="188,15,222,15,222,21,188,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9797e05054333b4b6258935721e82a60" name="a9797e05054333b4b6258935721e82a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9797e05054333b4b6258935721e82a60">&#9670;&#160;</a></span>GetArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override double lr1::Circle::GetArea </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обчислює площу. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Площа кола.</dd></dl>
+
+</div>
+</div>
+<a id="a27f18f6f6bb4e15d8b3f2978a43b66f4" name="a27f18f6f6bb4e15d8b3f2978a43b66f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27f18f6f6bb4e15d8b3f2978a43b66f4">&#9670;&#160;</a></span>GetCentroid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override <a class="el" href="classlr1_1_1Point.html">Point</a> lr1::Circle::GetCentroid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повертає центр фігури. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Точка центру.</dd></dl>
+
+</div>
+</div>
+<a id="a3ef0f22b15987ada0bd9169b0cb26be8" name="a3ef0f22b15987ada0bd9169b0cb26be8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef0f22b15987ada0bd9169b0cb26be8">&#9670;&#160;</a></span>GetPerimeter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override double lr1::Circle::GetPerimeter </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обчислює довжину кола. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Довжина кола.</dd></dl>
+
+</div>
+</div>
+<a id="ac75eccfa08d5b567d78e09b2a9c4f352" name="ac75eccfa08d5b567d78e09b2a9c4f352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75eccfa08d5b567d78e09b2a9c4f352">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string lr1::Circle::ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рядкове представлення. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Опис кола.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Компонентні дані</h2>
+<a id="a3a77a5c57e96aec41441d9f64933a7d6" name="a3a77a5c57e96aec41441d9f64933a7d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a77a5c57e96aec41441d9f64933a7d6">&#9670;&#160;</a></span>Center</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlr1_1_1Point.html">Point</a> lr1::Circle::Center { get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Центр кола. </p>
+
+</div>
+</div>
+<a id="a11413c9f282c4c7e47428fc8167d1057" name="a11413c9f282c4c7e47428fc8167d1057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11413c9f282c4c7e47428fc8167d1057">&#9670;&#160;</a></span>Radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double lr1::Circle::Radius { get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Радіус кола. </p>
+
+</div>
+</div>
+<a id="a6979aa26706b5d51a21de3aae5d28252" name="a6979aa26706b5d51a21de3aae5d28252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6979aa26706b5d51a21de3aae5d28252">&#9670;&#160;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::Circle::set</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Документація цього класу була створена з файлу:<ul>
+<li><a class="el" href="Circle_8cs.html">Circle.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

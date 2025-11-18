@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LR1: Geometry &amp; Data Structures: Клас lr1::DataStructures::MyCircularList&lt; T &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LR1: Geometry &amp; Data Structures<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelr1.html">lr1</a></li><li class="navelem"><a class="el" href="namespacelr1_1_1DataStructures.html">DataStructures</a></li><li class="navelem"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html">MyCircularList&lt; T &gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Загальнодоступні елементи</a> &#124;
+<a href="#pub-attribs">Загальнодоступні атрибути</a> &#124;
+<a href="#pri-attribs">Приватні дані</a> &#124;
+<a href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас lr1::DataStructures::MyCircularList&lt; T &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Кільцевий зв'язний список.  
+ <a href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#details">Детальніше...</a></p>
+<div class="dynheader">
+Схема успадкувань для lr1::DataStructures::MyCircularList&lt; T &gt;</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4__inherit__graph.png" border="0" usemap="#alr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="alr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_inherit__map" id="alr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_inherit__map">
+<area shape="rect" title="Кільцевий зв&#39;язний список." alt="" coords="5,119,159,479"/>
+<area shape="rect" title=" " alt="" coords="27,5,137,71"/>
+<area shape="poly" title=" " alt="" coords="85,85,85,119,79,119,79,85"/>
+</map>
+</div>
+<div class="dynheader">
+Діаграма зв'язків класу lr1::DataStructures::MyCircularList&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4__coll__graph.png" border="0" usemap="#alr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_coll__map" id="alr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_coll__map">
+<area shape="rect" title="Кільцевий зв&#39;язний список." alt="" coords="5,183,159,503"/>
+<area shape="rect" title=" " alt="" coords="5,23,116,88"/>
+<area shape="poly" title=" " alt="" coords="67,102,73,182,67,183,61,102"/>
+<area shape="rect" href="classlr1_1_1DataStructures_1_1Node_3_01T_01_4.html" title="Вузол зв&#39;язного списку." alt="" coords="141,5,277,105"/>
+<area shape="poly" title=" " alt="" coords="189,107,162,168,157,166,184,105"/>
+<area shape="poly" title=" " alt="" coords="278,37,296,43,303,55,301,63,294,69,291,65,296,60,298,56,292,47,276,42"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Загальнодоступні елементи</h2></td></tr>
+<tr class="memitem:a140af1e437dbb285f8effb5960b3521c" id="r_a140af1e437dbb285f8effb5960b3521c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a140af1e437dbb285f8effb5960b3521c">MyCircularList</a> ()</td></tr>
+<tr class="memdesc:a140af1e437dbb285f8effb5960b3521c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ініціалізує порожній список.  <br /></td></tr>
+<tr class="separator:a140af1e437dbb285f8effb5960b3521c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bc0a6700fd470c0cd9d9487ce7e5fc" id="r_a24bc0a6700fd470c0cd9d9487ce7e5fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a24bc0a6700fd470c0cd9d9487ce7e5fc">Add</a> (T item)</td></tr>
+<tr class="memdesc:a24bc0a6700fd470c0cd9d9487ce7e5fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Додає елемент у кінець.  <br /></td></tr>
+<tr class="separator:a24bc0a6700fd470c0cd9d9487ce7e5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ed6546a18dbfb4223830547aac686f" id="r_a25ed6546a18dbfb4223830547aac686f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a25ed6546a18dbfb4223830547aac686f">InsertAt</a> (T item, int index)</td></tr>
+<tr class="memdesc:a25ed6546a18dbfb4223830547aac686f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставляє елемент за індексом.  <br /></td></tr>
+<tr class="separator:a25ed6546a18dbfb4223830547aac686f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5bd89c219d7afd253f2d27a20fcd688" id="r_ab5bd89c219d7afd253f2d27a20fcd688"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#ab5bd89c219d7afd253f2d27a20fcd688">RemoveAt</a> (int index)</td></tr>
+<tr class="memdesc:ab5bd89c219d7afd253f2d27a20fcd688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Видаляє елемент за індексом.  <br /></td></tr>
+<tr class="separator:ab5bd89c219d7afd253f2d27a20fcd688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c208b9271c1aaf8385527f2c73f6f0" id="r_a37c208b9271c1aaf8385527f2c73f6f0"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a37c208b9271c1aaf8385527f2c73f6f0">GetAt</a> (int index)</td></tr>
+<tr class="memdesc:a37c208b9271c1aaf8385527f2c73f6f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отримує елемент за індексом.  <br /></td></tr>
+<tr class="separator:a37c208b9271c1aaf8385527f2c73f6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87e663fdac6299ecabd19d3443c147f" id="r_ad87e663fdac6299ecabd19d3443c147f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#ad87e663fdac6299ecabd19d3443c147f">IndexOf</a> (T item)</td></tr>
+<tr class="memdesc:ad87e663fdac6299ecabd19d3443c147f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає індекс елемента.  <br /></td></tr>
+<tr class="separator:ad87e663fdac6299ecabd19d3443c147f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a016cc231d1a4ab46be142f3cb2d5a03d" id="r_a016cc231d1a4ab46be142f3cb2d5a03d"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a016cc231d1a4ab46be142f3cb2d5a03d">FindFirst</a> (Func&lt; T, bool &gt; predicate)</td></tr>
+<tr class="memdesc:a016cc231d1a4ab46be142f3cb2d5a03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шукає перший елемент за умовою.  <br /></td></tr>
+<tr class="separator:a016cc231d1a4ab46be142f3cb2d5a03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afde01ede8edbbf386915145a72a05f12" id="r_afde01ede8edbbf386915145a72a05f12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#afde01ede8edbbf386915145a72a05f12">Contains</a> (T item)</td></tr>
+<tr class="memdesc:afde01ede8edbbf386915145a72a05f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє наявність елемента.  <br /></td></tr>
+<tr class="separator:afde01ede8edbbf386915145a72a05f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab497ffcd8cb1b4523940b1f4704ddfc3" id="r_ab497ffcd8cb1b4523940b1f4704ddfc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#ab497ffcd8cb1b4523940b1f4704ddfc3">Clear</a> ()</td></tr>
+<tr class="memdesc:ab497ffcd8cb1b4523940b1f4704ddfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищає список.  <br /></td></tr>
+<tr class="separator:ab497ffcd8cb1b4523940b1f4704ddfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70acd3b698f4776165f66a387c3a9712" id="r_a70acd3b698f4776165f66a387c3a9712"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a70acd3b698f4776165f66a387c3a9712">ToString</a> ()</td></tr>
+<tr class="memdesc:a70acd3b698f4776165f66a387c3a9712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рядкове представлення списку.  <br /></td></tr>
+<tr class="separator:a70acd3b698f4776165f66a387c3a9712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bd542df35456423f71996e6c4e42f6" id="r_a42bd542df35456423f71996e6c4e42f6"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a42bd542df35456423f71996e6c4e42f6">GetEnumerator</a> ()</td></tr>
+<tr class="memdesc:a42bd542df35456423f71996e6c4e42f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає ітератор.  <br /></td></tr>
+<tr class="separator:a42bd542df35456423f71996e6c4e42f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67ef282be633c752c7d30a0829cbd047" id="r_a67ef282be633c752c7d30a0829cbd047"><td class="memItemLeft" align="right" valign="top">IEnumerator IEnumerable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a67ef282be633c752c7d30a0829cbd047">GetEnumerator</a> ()</td></tr>
+<tr class="separator:a67ef282be633c752c7d30a0829cbd047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Загальнодоступні атрибути</h2></td></tr>
+<tr class="memitem:a363ee52f11bb6e27429212e392613b7e" id="r_a363ee52f11bb6e27429212e392613b7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a363ee52f11bb6e27429212e392613b7e">Count</a> { get</td></tr>
+<tr class="memdesc:a363ee52f11bb6e27429212e392613b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кількість елементів.  <br /></td></tr>
+<tr class="separator:a363ee52f11bb6e27429212e392613b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Приватні дані</h2></td></tr>
+<tr class="memitem:a3c8e618e7ab06fe1b3d285922a647307" id="r_a3c8e618e7ab06fe1b3d285922a647307"><td class="memItemLeft" align="right" valign="top">Node&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a3c8e618e7ab06fe1b3d285922a647307">_head</a></td></tr>
+<tr class="separator:a3c8e618e7ab06fe1b3d285922a647307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccdbd2b355d6ecb77871f8b810e8e89" id="r_a3ccdbd2b355d6ecb77871f8b810e8e89"><td class="memItemLeft" align="right" valign="top">Node&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#a3ccdbd2b355d6ecb77871f8b810e8e89">_tail</a></td></tr>
+<tr class="separator:a3ccdbd2b355d6ecb77871f8b810e8e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4b234b94fea1fa910e8506be4470276" id="r_ac4b234b94fea1fa910e8506be4470276"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4.html#ac4b234b94fea1fa910e8506be4470276">set</a></td></tr>
+<tr class="separator:ac4b234b94fea1fa910e8506be4470276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Кільцевий зв'язний список. </p>
+<dl class="tparams"><dt>Параметри шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Тип елементів.</td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Конструктор(и)</h2>
+<a id="a140af1e437dbb285f8effb5960b3521c" name="a140af1e437dbb285f8effb5960b3521c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a140af1e437dbb285f8effb5960b3521c">&#9670;&#160;</a></span>MyCircularList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::DataStructures::MyCircularList&lt; T &gt;::MyCircularList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ініціалізує порожній список. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Опис методів компонент</h2>
+<a id="a24bc0a6700fd470c0cd9d9487ce7e5fc" name="a24bc0a6700fd470c0cd9d9487ce7e5fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bc0a6700fd470c0cd9d9487ce7e5fc">&#9670;&#160;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyCircularList&lt; T &gt;::Add </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Додає елемент у кінець. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab497ffcd8cb1b4523940b1f4704ddfc3" name="ab497ffcd8cb1b4523940b1f4704ddfc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab497ffcd8cb1b4523940b1f4704ddfc3">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyCircularList&lt; T &gt;::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очищає список. </p>
+
+</div>
+</div>
+<a id="afde01ede8edbbf386915145a72a05f12" name="afde01ede8edbbf386915145a72a05f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afde01ede8edbbf386915145a72a05f12">&#9670;&#160;</a></span>Contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lr1::DataStructures::MyCircularList&lt; T &gt;::Contains </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє наявність елемента. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо знайдено.</dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_afde01ede8edbbf386915145a72a05f12_cgraph.png" border="0" usemap="#aclasslr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_afde01ede8edbbf386915145a72a05f12_cgraph" alt=""/></div>
+<map name="aclasslr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_afde01ede8edbbf386915145a72a05f12_cgraph" id="aclasslr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_afde01ede8edbbf386915145a72a05f12_cgraph">
+<area shape="rect" title="Перевіряє наявність елемента." alt="" coords="5,22,152,77"/>
+<area shape="rect" href="namespacelr1_1_1DataStructures.html#a18aec923b6d5c488de8a42527fba9ca3" title="Повертає індекс елемента." alt="" coords="200,29,344,69"/>
+<area shape="poly" title=" " alt="" coords="152,47,186,47,186,52,152,52"/>
+<area shape="poly" title=" " alt="" coords="236,30,234,20,239,11,252,5,272,3,295,6,307,13,304,17,293,11,272,8,254,10,243,15,239,21,241,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a016cc231d1a4ab46be142f3cb2d5a03d" name="a016cc231d1a4ab46be142f3cb2d5a03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016cc231d1a4ab46be142f3cb2d5a03d">&#9670;&#160;</a></span>FindFirst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T lr1::DataStructures::MyCircularList&lt; T &gt;::FindFirst </td>
+          <td>(</td>
+          <td class="paramtype">Func&lt; T, bool &gt;&#160;</td>
+          <td class="paramname"><em>predicate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шукає перший елемент за умовою. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">predicate</td><td>Умова пошуку.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Елемент або default.</dd></dl>
+
+</div>
+</div>
+<a id="a37c208b9271c1aaf8385527f2c73f6f0" name="a37c208b9271c1aaf8385527f2c73f6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c208b9271c1aaf8385527f2c73f6f0">&#9670;&#160;</a></span>GetAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T lr1::DataStructures::MyCircularList&lt; T &gt;::GetAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отримує елемент за індексом. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Індекс елемента.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Елемент списку.</dd></dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Індекс поза межами.</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Список порожній.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42bd542df35456423f71996e6c4e42f6" name="a42bd542df35456423f71996e6c4e42f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42bd542df35456423f71996e6c4e42f6">&#9670;&#160;</a></span>GetEnumerator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator&lt; T &gt; lr1::DataStructures::MyCircularList&lt; T &gt;::GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повертає ітератор. </p>
+
+</div>
+</div>
+<a id="a67ef282be633c752c7d30a0829cbd047" name="a67ef282be633c752c7d30a0829cbd047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67ef282be633c752c7d30a0829cbd047">&#9670;&#160;</a></span>GetEnumerator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator IEnumerable lr1::DataStructures::MyCircularList&lt; T &gt;::GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad87e663fdac6299ecabd19d3443c147f" name="ad87e663fdac6299ecabd19d3443c147f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87e663fdac6299ecabd19d3443c147f">&#9670;&#160;</a></span>IndexOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lr1::DataStructures::MyCircularList&lt; T &gt;::IndexOf </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повертає індекс елемента. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Індекс або -1.</dd></dl>
+
+</div>
+</div>
+<a id="a25ed6546a18dbfb4223830547aac686f" name="a25ed6546a18dbfb4223830547aac686f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ed6546a18dbfb4223830547aac686f">&#9670;&#160;</a></span>InsertAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyCircularList&lt; T &gt;::InsertAt </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вставляє елемент за індексом. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+    <tr><td class="paramname">index</td><td>Індекс вставки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Індекс поза межами.</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_a25ed6546a18dbfb4223830547aac686f_cgraph.png" border="0" usemap="#aclasslr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_a25ed6546a18dbfb4223830547aac686f_cgraph" alt=""/></div>
+<map name="aclasslr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_a25ed6546a18dbfb4223830547aac686f_cgraph" id="aclasslr1_1_1DataStructures_1_1MyCircularList_3_01T_01_4_a25ed6546a18dbfb4223830547aac686f_cgraph">
+<area shape="rect" title="Вставляє елемент за індексом." alt="" coords="5,15,152,69"/>
+<area shape="rect" href="namespacelr1_1_1DataStructures.html#a925474d18867694bbc92e3a35db3606e" title="Додає елемент." alt="" coords="200,29,377,55"/>
+<area shape="poly" title=" " alt="" coords="153,39,186,39,186,45,153,45"/>
+<area shape="poly" title=" " alt="" coords="255,31,247,21,251,11,265,5,289,3,318,6,329,15,326,20,316,11,289,8,267,10,255,15,252,20,259,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5bd89c219d7afd253f2d27a20fcd688" name="ab5bd89c219d7afd253f2d27a20fcd688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5bd89c219d7afd253f2d27a20fcd688">&#9670;&#160;</a></span>RemoveAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyCircularList&lt; T &gt;::RemoveAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Видаляє елемент за індексом. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Індекс видалення.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Індекс поза межами.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a70acd3b698f4776165f66a387c3a9712" name="a70acd3b698f4776165f66a387c3a9712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70acd3b698f4776165f66a387c3a9712">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string lr1::DataStructures::MyCircularList&lt; T &gt;::ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рядкове представлення списку. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Рядок з елементами.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Компонентні дані</h2>
+<a id="a3c8e618e7ab06fe1b3d285922a647307" name="a3c8e618e7ab06fe1b3d285922a647307"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8e618e7ab06fe1b3d285922a647307">&#9670;&#160;</a></span>_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node&lt;T&gt; lr1::DataStructures::MyCircularList&lt; T &gt;::_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ccdbd2b355d6ecb77871f8b810e8e89" name="a3ccdbd2b355d6ecb77871f8b810e8e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ccdbd2b355d6ecb77871f8b810e8e89">&#9670;&#160;</a></span>_tail</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node&lt;T&gt; lr1::DataStructures::MyCircularList&lt; T &gt;::_tail</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a363ee52f11bb6e27429212e392613b7e" name="a363ee52f11bb6e27429212e392613b7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363ee52f11bb6e27429212e392613b7e">&#9670;&#160;</a></span>Count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lr1::DataStructures::MyCircularList&lt; T &gt;::Count { get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Кількість елементів. </p>
+
+</div>
+</div>
+<a id="ac4b234b94fea1fa910e8506be4470276" name="ac4b234b94fea1fa910e8506be4470276"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4b234b94fea1fa910e8506be4470276">&#9670;&#160;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::DataStructures::MyCircularList&lt; T &gt;::set</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Документація цього класу була створена з файлу:<ul>
+<li>DataStructures/<a class="el" href="MyCircularList_8cs.html">MyCircularList.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

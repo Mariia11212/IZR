@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LR1: Geometry &amp; Data Structures: Клас lr1::DataStructures::MyLinkedList&lt; T &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">LR1: Geometry &amp; Data Structures<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacelr1.html">lr1</a></li><li class="navelem"><a class="el" href="namespacelr1_1_1DataStructures.html">DataStructures</a></li><li class="navelem"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html">MyLinkedList&lt; T &gt;</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Загальнодоступні елементи</a> &#124;
+<a href="#pub-attribs">Загальнодоступні атрибути</a> &#124;
+<a href="#pri-attribs">Приватні дані</a> &#124;
+<a href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас lr1::DataStructures::MyLinkedList&lt; T &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Однозв'язний список.  
+ <a href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#details">Детальніше...</a></p>
+<div class="dynheader">
+Схема успадкувань для lr1::DataStructures::MyLinkedList&lt; T &gt;</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4__inherit__graph.png" border="0" usemap="#alr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="alr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_inherit__map" id="alr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_inherit__map">
+<area shape="rect" title="Однозв&#39;язний список." alt="" coords="5,119,151,459"/>
+<area shape="rect" title=" " alt="" coords="23,5,133,71"/>
+<area shape="poly" title=" " alt="" coords="81,84,81,118,75,118,75,84"/>
+</map>
+</div>
+<div class="dynheader">
+Діаграма зв'язків класу lr1::DataStructures::MyLinkedList&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4__coll__graph.png" border="0" usemap="#alr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_coll__map" id="alr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_coll__map">
+<area shape="rect" title="Однозв&#39;язний список." alt="" coords="9,168,155,488"/>
+<area shape="rect" title=" " alt="" coords="5,23,116,88"/>
+<area shape="poly" title=" " alt="" coords="67,101,72,167,67,168,62,102"/>
+<area shape="rect" href="classlr1_1_1DataStructures_1_1Node_3_01T_01_4.html" title="Вузол зв&#39;язного списку." alt="" coords="141,5,277,105"/>
+<area shape="poly" title=" " alt="" coords="188,107,164,157,159,155,183,104"/>
+<area shape="poly" title=" " alt="" coords="278,38,296,44,303,55,301,63,294,68,291,64,296,60,298,56,292,48,276,43"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Загальнодоступні елементи</h2></td></tr>
+<tr class="memitem:a2fb455b35f12dc436c0e5e38947e0d15" id="r_a2fb455b35f12dc436c0e5e38947e0d15"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#a2fb455b35f12dc436c0e5e38947e0d15">MyLinkedList</a> ()</td></tr>
+<tr class="memdesc:a2fb455b35f12dc436c0e5e38947e0d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ініціалізує порожній список.  <br /></td></tr>
+<tr class="separator:a2fb455b35f12dc436c0e5e38947e0d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfa212b4f8cba88822b2deaee2b75653" id="r_abfa212b4f8cba88822b2deaee2b75653"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#abfa212b4f8cba88822b2deaee2b75653">Add</a> (T item)</td></tr>
+<tr class="memdesc:abfa212b4f8cba88822b2deaee2b75653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Додає елемент у кінець.  <br /></td></tr>
+<tr class="separator:abfa212b4f8cba88822b2deaee2b75653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57403b3665ba03f041adadd5f7e5f304" id="r_a57403b3665ba03f041adadd5f7e5f304"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#a57403b3665ba03f041adadd5f7e5f304">InsertAt</a> (T item, int index)</td></tr>
+<tr class="memdesc:a57403b3665ba03f041adadd5f7e5f304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставляє елемент за індексом.  <br /></td></tr>
+<tr class="separator:a57403b3665ba03f041adadd5f7e5f304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f1f14a1022d917b1d37a3b2795889b" id="r_a10f1f14a1022d917b1d37a3b2795889b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#a10f1f14a1022d917b1d37a3b2795889b">RemoveAt</a> (int index)</td></tr>
+<tr class="memdesc:a10f1f14a1022d917b1d37a3b2795889b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Видаляє елемент за індексом.  <br /></td></tr>
+<tr class="separator:a10f1f14a1022d917b1d37a3b2795889b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce65449c59f59b9675295feaa3537cf" id="r_adce65449c59f59b9675295feaa3537cf"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#adce65449c59f59b9675295feaa3537cf">GetAt</a> (int index)</td></tr>
+<tr class="memdesc:adce65449c59f59b9675295feaa3537cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отримує елемент за індексом.  <br /></td></tr>
+<tr class="separator:adce65449c59f59b9675295feaa3537cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f97f6bd15262d0f066a8178ad9c286" id="r_a37f97f6bd15262d0f066a8178ad9c286"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#a37f97f6bd15262d0f066a8178ad9c286">IndexOf</a> (T item)</td></tr>
+<tr class="memdesc:a37f97f6bd15262d0f066a8178ad9c286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає індекс елемента.  <br /></td></tr>
+<tr class="separator:a37f97f6bd15262d0f066a8178ad9c286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c61c36dda7f900972099abd74962f76" id="r_a4c61c36dda7f900972099abd74962f76"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#a4c61c36dda7f900972099abd74962f76">FindFirst</a> (Func&lt; T, bool &gt; predicate)</td></tr>
+<tr class="memdesc:a4c61c36dda7f900972099abd74962f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шукає перший елемент за умовою.  <br /></td></tr>
+<tr class="separator:a4c61c36dda7f900972099abd74962f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71e74adda2cb7dff551ef2bf35fce7ff" id="r_a71e74adda2cb7dff551ef2bf35fce7ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#a71e74adda2cb7dff551ef2bf35fce7ff">Contains</a> (T item)</td></tr>
+<tr class="memdesc:a71e74adda2cb7dff551ef2bf35fce7ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє наявність елемента.  <br /></td></tr>
+<tr class="separator:a71e74adda2cb7dff551ef2bf35fce7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7976950b45fbb6782354919b2d7b28b" id="r_ac7976950b45fbb6782354919b2d7b28b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#ac7976950b45fbb6782354919b2d7b28b">Clear</a> ()</td></tr>
+<tr class="memdesc:ac7976950b45fbb6782354919b2d7b28b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очищає список.  <br /></td></tr>
+<tr class="separator:ac7976950b45fbb6782354919b2d7b28b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e879f54bae7e26b3091d1fc1d2a90e" id="r_a98e879f54bae7e26b3091d1fc1d2a90e"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#a98e879f54bae7e26b3091d1fc1d2a90e">ToString</a> ()</td></tr>
+<tr class="memdesc:a98e879f54bae7e26b3091d1fc1d2a90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рядкове представлення списку.  <br /></td></tr>
+<tr class="separator:a98e879f54bae7e26b3091d1fc1d2a90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb980f28cf8a4a0a528121612687a0fa" id="r_adb980f28cf8a4a0a528121612687a0fa"><td class="memItemLeft" align="right" valign="top">IEnumerator&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#adb980f28cf8a4a0a528121612687a0fa">GetEnumerator</a> ()</td></tr>
+<tr class="memdesc:adb980f28cf8a4a0a528121612687a0fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає ітератор.  <br /></td></tr>
+<tr class="separator:adb980f28cf8a4a0a528121612687a0fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f15d85bcb2635714f7588fd9e71d9d" id="r_ad3f15d85bcb2635714f7588fd9e71d9d"><td class="memItemLeft" align="right" valign="top">IEnumerator IEnumerable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#ad3f15d85bcb2635714f7588fd9e71d9d">GetEnumerator</a> ()</td></tr>
+<tr class="separator:ad3f15d85bcb2635714f7588fd9e71d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Загальнодоступні атрибути</h2></td></tr>
+<tr class="memitem:ae21e88684292de646dcd968fb6bd13a4" id="r_ae21e88684292de646dcd968fb6bd13a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#ae21e88684292de646dcd968fb6bd13a4">Count</a> { get</td></tr>
+<tr class="memdesc:ae21e88684292de646dcd968fb6bd13a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Кількість елементів.  <br /></td></tr>
+<tr class="separator:ae21e88684292de646dcd968fb6bd13a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Приватні дані</h2></td></tr>
+<tr class="memitem:af659decd8f10b7a2984ca31032912ed4" id="r_af659decd8f10b7a2984ca31032912ed4"><td class="memItemLeft" align="right" valign="top">Node&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#af659decd8f10b7a2984ca31032912ed4">_head</a></td></tr>
+<tr class="separator:af659decd8f10b7a2984ca31032912ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb3a85c215fc90ff9c85c0a84c7c69b" id="r_aaeb3a85c215fc90ff9c85c0a84c7c69b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4.html#aaeb3a85c215fc90ff9c85c0a84c7c69b">set</a></td></tr>
+<tr class="separator:aaeb3a85c215fc90ff9c85c0a84c7c69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Однозв'язний список. </p>
+<dl class="tparams"><dt>Параметри шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Тип елементів.</td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Конструктор(и)</h2>
+<a id="a2fb455b35f12dc436c0e5e38947e0d15" name="a2fb455b35f12dc436c0e5e38947e0d15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb455b35f12dc436c0e5e38947e0d15">&#9670;&#160;</a></span>MyLinkedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::DataStructures::MyLinkedList&lt; T &gt;::MyLinkedList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ініціалізує порожній список. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Опис методів компонент</h2>
+<a id="abfa212b4f8cba88822b2deaee2b75653" name="abfa212b4f8cba88822b2deaee2b75653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfa212b4f8cba88822b2deaee2b75653">&#9670;&#160;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyLinkedList&lt; T &gt;::Add </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Додає елемент у кінець. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7976950b45fbb6782354919b2d7b28b" name="ac7976950b45fbb6782354919b2d7b28b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7976950b45fbb6782354919b2d7b28b">&#9670;&#160;</a></span>Clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyLinkedList&lt; T &gt;::Clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Очищає список. </p>
+
+</div>
+</div>
+<a id="a71e74adda2cb7dff551ef2bf35fce7ff" name="a71e74adda2cb7dff551ef2bf35fce7ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71e74adda2cb7dff551ef2bf35fce7ff">&#9670;&#160;</a></span>Contains()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lr1::DataStructures::MyLinkedList&lt; T &gt;::Contains </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє наявність елемента. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо знайдено.</dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_a71e74adda2cb7dff551ef2bf35fce7ff_cgraph.png" border="0" usemap="#aclasslr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_a71e74adda2cb7dff551ef2bf35fce7ff_cgraph" alt=""/></div>
+<map name="aclasslr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_a71e74adda2cb7dff551ef2bf35fce7ff_cgraph" id="aclasslr1_1_1DataStructures_1_1MyLinkedList_3_01T_01_4_a71e74adda2cb7dff551ef2bf35fce7ff_cgraph">
+<area shape="rect" title="Перевіряє наявність елемента." alt="" coords="5,22,159,77"/>
+<area shape="rect" href="namespacelr1_1_1DataStructures.html#a18aec923b6d5c488de8a42527fba9ca3" title="Повертає індекс елемента." alt="" coords="207,29,351,69"/>
+<area shape="poly" title=" " alt="" coords="159,47,193,47,193,52,159,52"/>
+<area shape="poly" title=" " alt="" coords="242,30,240,20,246,11,259,5,279,3,302,6,314,13,311,17,300,11,279,8,260,10,249,15,245,21,247,28"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4c61c36dda7f900972099abd74962f76" name="a4c61c36dda7f900972099abd74962f76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c61c36dda7f900972099abd74962f76">&#9670;&#160;</a></span>FindFirst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T lr1::DataStructures::MyLinkedList&lt; T &gt;::FindFirst </td>
+          <td>(</td>
+          <td class="paramtype">Func&lt; T, bool &gt;&#160;</td>
+          <td class="paramname"><em>predicate</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шукає перший елемент за умовою. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">predicate</td><td>Умова пошуку.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Елемент або default.</dd></dl>
+
+</div>
+</div>
+<a id="adce65449c59f59b9675295feaa3537cf" name="adce65449c59f59b9675295feaa3537cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adce65449c59f59b9675295feaa3537cf">&#9670;&#160;</a></span>GetAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">T lr1::DataStructures::MyLinkedList&lt; T &gt;::GetAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отримує елемент за індексом. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Індекс елемента.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Елемент списку.</dd></dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Індекс поза межами.</td></tr>
+    <tr><td class="paramname">InvalidOperationException</td><td>Список порожній.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adb980f28cf8a4a0a528121612687a0fa" name="adb980f28cf8a4a0a528121612687a0fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb980f28cf8a4a0a528121612687a0fa">&#9670;&#160;</a></span>GetEnumerator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator&lt; T &gt; lr1::DataStructures::MyLinkedList&lt; T &gt;::GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повертає ітератор. </p>
+
+</div>
+</div>
+<a id="ad3f15d85bcb2635714f7588fd9e71d9d" name="ad3f15d85bcb2635714f7588fd9e71d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f15d85bcb2635714f7588fd9e71d9d">&#9670;&#160;</a></span>GetEnumerator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IEnumerator IEnumerable lr1::DataStructures::MyLinkedList&lt; T &gt;::GetEnumerator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37f97f6bd15262d0f066a8178ad9c286" name="a37f97f6bd15262d0f066a8178ad9c286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f97f6bd15262d0f066a8178ad9c286">&#9670;&#160;</a></span>IndexOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lr1::DataStructures::MyLinkedList&lt; T &gt;::IndexOf </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Повертає індекс елемента. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Індекс або -1.</dd></dl>
+
+</div>
+</div>
+<a id="a57403b3665ba03f041adadd5f7e5f304" name="a57403b3665ba03f041adadd5f7e5f304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57403b3665ba03f041adadd5f7e5f304">&#9670;&#160;</a></span>InsertAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyLinkedList&lt; T &gt;::InsertAt </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вставляє елемент за індексом. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td>Елемент.</td></tr>
+    <tr><td class="paramname">index</td><td>Індекс вставки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Індекс поза межами.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a10f1f14a1022d917b1d37a3b2795889b" name="a10f1f14a1022d917b1d37a3b2795889b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f1f14a1022d917b1d37a3b2795889b">&#9670;&#160;</a></span>RemoveAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lr1::DataStructures::MyLinkedList&lt; T &gt;::RemoveAt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Видаляє елемент за індексом. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Індекс видалення.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Обробка виняткових ситуацій</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ArgumentOutOfRangeException</td><td>Індекс поза межами.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a98e879f54bae7e26b3091d1fc1d2a90e" name="a98e879f54bae7e26b3091d1fc1d2a90e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e879f54bae7e26b3091d1fc1d2a90e">&#9670;&#160;</a></span>ToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string lr1::DataStructures::MyLinkedList&lt; T &gt;::ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Рядкове представлення списку. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Рядок з елементами.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Компонентні дані</h2>
+<a id="af659decd8f10b7a2984ca31032912ed4" name="af659decd8f10b7a2984ca31032912ed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af659decd8f10b7a2984ca31032912ed4">&#9670;&#160;</a></span>_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Node&lt;T&gt; lr1::DataStructures::MyLinkedList&lt; T &gt;::_head</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae21e88684292de646dcd968fb6bd13a4" name="ae21e88684292de646dcd968fb6bd13a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae21e88684292de646dcd968fb6bd13a4">&#9670;&#160;</a></span>Count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lr1::DataStructures::MyLinkedList&lt; T &gt;::Count { get</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Кількість елементів. </p>
+
+</div>
+</div>
+<a id="aaeb3a85c215fc90ff9c85c0a84c7c69b" name="aaeb3a85c215fc90ff9c85c0a84c7c69b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaeb3a85c215fc90ff9c85c0a84c7c69b">&#9670;&#160;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lr1::DataStructures::MyLinkedList&lt; T &gt;::set</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Документація цього класу була створена з файлу:<ul>
+<li>DataStructures/<a class="el" href="MyLinkedList_8cs.html">MyLinkedList.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

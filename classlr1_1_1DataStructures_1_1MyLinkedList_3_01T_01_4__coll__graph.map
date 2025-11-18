@@ -1,0 +1,8 @@
+<map id="lr1::DataStructures::MyLinkedList&lt; T &gt;" name="lr1::DataStructures::MyLinkedList&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Однозв&#39;язний список." alt="" coords="9,168,155,488"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,23,116,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,101,72,167,67,168,62,102"/>
+<area shape="rect" id="Node000003" href="$classlr1_1_1DataStructures_1_1Node_3_01T_01_4.html" title="Вузол зв&#39;язного списку." alt="" coords="141,5,277,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="188,107,164,157,159,155,183,104"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="278,38,296,44,303,55,301,63,294,68,291,64,296,60,298,56,292,48,276,43"/>
+</map>
